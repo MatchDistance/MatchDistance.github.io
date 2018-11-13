@@ -1277,11 +1277,9 @@ input:focus, select:focus, button:focus{
 .card_number {
     width: 335px;
 }
-<<<<<<< HEAD
+
 @media only screen and (max-width: 700px) {
-=======
-@media only screen and (max-width: 980px) {
->>>>>>> edc8eda9382b73ae055ef0e7c86aa033c0ea8eac
+
     .header {
         position: fixed;
         background-color: var(--color1);
