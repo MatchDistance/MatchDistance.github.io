@@ -1319,6 +1319,9 @@ input:focus, select:focus, button:focus{
     #about_us::after, #pre_order::after {
         margin-top: 13px;
     }
+    #about_us {
+        display: none;
+    }
     a:hover::after{
         transform: scaleX(1);
     }
