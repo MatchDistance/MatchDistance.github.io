@@ -349,19 +349,19 @@ $(document).ready(function(){
 $(document).scroll(function(){
     var x = $(document).scrollTop();
     console.log(x);
-    if(x>110){
+    if(x>120){
         var y = $(document).width();
         if(y<700){
-            $('.buy:first-child').css({'opacity': 0});
-            $('.buy:last-child').css({'opacity': 1});
+            $('.choice-outer a:first-child buy').css({'opacity': 0});
+            $('.choice-outer a:last-child buy').css({'opacity': 1});
 
         }
     }
     else{
         var y = $(document).width();
         if(y<700){
-            $('.buy:first-child').css({'opacity': 1});
-            $('.buy:last-child').css({'opacity': 0});
+            $('.choice-outer a:first-child buy').css({'opacity': 1});
+            $('.choice-outer a:last-child buy').css({'opacity': 0});
         }
     }
     if(x>=300){

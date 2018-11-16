@@ -1528,6 +1528,9 @@ input:focus, select:focus, button:focus{
     }
     .slide_end{
         opacity: 1;
+        top: 0px;
+    }
+    .content .slide_end {
         top: -30px;
     }
     .paragraph2 {
@@ -2621,6 +2624,9 @@ input:focus, select:focus, button:focus{
     #logo {
         font-size: 1.5em;
         top: 18px;
+    }
+    #logo::after {
+        margin-top: 13px;
     }
     .description_title, .payment_title, .order_main_title {
         font-size: 1.9em;
