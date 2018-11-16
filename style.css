@@ -1951,22 +1951,26 @@ input:focus, select:focus, button:focus{
     }
     
     .choice-outer {
+        margin: 0;
         position: relative;
-        height: 500px;
+        height: fit-content;
         width: 100%;
         display: block;
         overflow: hidden;
         transition: 0.4s ease-in;
+        margin-top: 55px;
+        padding-bottom: 50px;
     }
     .chosen {
         top: -100px;
         opacity: 0;
     }
     .choice {
-        border: 2px solid var(--color3);
-        width: 45%;
-        margin: 0 2%;
-        height: 496px;
+        border: 3px solid var(--color3);
+        width: -webkit-fill-available;
+        margin: 0 0;
+        top: 0;
+        height: 300px;
         display: inline-block;
         position: relative;
         overflow: hidden;
@@ -1975,11 +1979,17 @@ input:focus, select:focus, button:focus{
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
     .choice:first-child {
-        margin-right: 1%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 50px;
+    }
+    .choice:last-child {
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .choice:first-child img {
         height: 340px;
-        top: 66px;
+        top: 45px;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
@@ -1995,11 +2005,11 @@ input:focus, select:focus, button:focus{
         left: 50%;
         margin-left: -30px;
         transform: translateX(-50%);
-        top: 65px;
+        top: 45px;
         z-index: 4;
     }
     .choice:last-child img:last-child {
-        top: 65px;
+        top: 45px;
         left: 50%;
         margin-left: 40px;
         transform: translateX(-50%);
