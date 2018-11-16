@@ -1281,7 +1281,7 @@ input:focus, select:focus, button:focus{
 @media only screen and (max-width: 700px) {
     .header {
         position: fixed;
-        background-color: var(--color1);
+        background-color: #292929db;
         height: 61px;
         width: 100%;
         display: block;
@@ -2129,7 +2129,7 @@ input:focus, select:focus, button:focus{
         width: -webkit-fill-available;
         z-index: 5;
         /* padding: 0 5%; */
-        top: 56px;
+        top: 45px;
         margin: 0 5%;
         position: absolute;
         opacity: 1;
@@ -2179,7 +2179,7 @@ input:focus, select:focus, button:focus{
         position: relative;
     }
     .item_block .paragraph_block span {
-        top: 3px;
+        top: 5px;
         z-index: 5;
         position: relative;
     }
@@ -2191,7 +2191,7 @@ input:focus, select:focus, button:focus{
         cursor: pointer;
         font-weight: bold;
         text-align: center;
-        font-size: 1em;
+        font-size: 0.8em;
         height: 25px;
         width: 48%;
         padding: 6px 0;
@@ -2241,11 +2241,13 @@ input:focus, select:focus, button:focus{
         width: -webkit-fill-available;
     }
     .item_description .block-hover,  .payment_final .paragraph_block:nth-child(2) .chose_payment:first-child .block-hover{
-        top: -88px;
+        top: -83px;
     }
     .item_description .paragraph_block:nth-child(3) {
-        margin-bottom: 375px;
+        margin-bottom: 335px;
         top: 0;
+        margin-top: 20px;
+        text-align: center;
         position: relative;
     }
     .chose:last-child{
@@ -2260,7 +2262,7 @@ input:focus, select:focus, button:focus{
         margin-top: 100px;
     }
     .errors, .error_mess {
-        bottom: -100px;
+        bottom: -55px;
         display: block;
         position: absolute;
         height: 45px;
@@ -2637,5 +2639,10 @@ input:focus, select:focus, button:focus{
     .shirt_container {
         height: 350px;
     }
-
+    .description_block .paragraph_block:last-child .block-hover{
+        top: -88px;
+    }
+    .description_block li span {
+        top: 3px;
+    }
 }

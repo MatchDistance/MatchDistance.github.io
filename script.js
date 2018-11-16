@@ -348,7 +348,6 @@ $(document).ready(function(){
 
 $(document).scroll(function(){
     var x = $(document).scrollTop();
-    console.log(x);
     if(x>120){
         var y = $(document).width();
         if(y<700){
