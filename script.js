@@ -352,16 +352,16 @@ $(document).scroll(function(){
     if(x>120){
         var y = $(document).width();
         if(y<700){
-            $('.choice-outer a:first-child buy').css({'opacity': 0});
-            $('.choice-outer a:last-child buy').css({'opacity': 1});
+            $('.choice-outer a:first-child .buy').css({'opacity': 0});
+            $('.choice-outer a:last-child .buy').css({'opacity': 1});
 
         }
     }
     else{
         var y = $(document).width();
         if(y<700){
-            $('.choice-outer a:first-child buy').css({'opacity': 1});
-            $('.choice-outer a:last-child buy').css({'opacity': 0});
+            $('.choice-outer a:first-child .buy').css({'opacity': 1});
+            $('.choice-outer a:last-child .buy').css({'opacity': 0});
         }
     }
     if(x>=300){
