@@ -349,18 +349,18 @@ $(document).ready(function(){
 $(document).scroll(function(){
     var x = $(document).scrollTop();
     console.log(x);
-    if(x>200 && x<250){
+    if(x>200){
         var y = $(document).width();
         if(y<700){
-            $('.buy:first-child').css({'opacity': 1});
-            $('.buy:last-child').css({'opacity': 0});
+            $('.buy:first-child').css({'opacity': 0});
+            $('.buy:last-child').css({'opacity': 1});
 
         }
     }
     else{
         if(y<700){
-            $('.buy:first-child').css({'opacity': 0});
-            $('.buy:last-child').css({'opacity': 1});
+            $('.buy:first-child').css({'opacity': 1});
+            $('.buy:last-child').css({'opacity': 0});
         }
     }
     if(x>=300){

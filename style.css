@@ -1345,7 +1345,7 @@ input:focus, select:focus, button:focus{
         position: relative;
         width: 100%;
         overflow: hidden;
-        min-height: 615px;
+        min-height: 600px;
         background-color: var(--color1);
     }
     @keyframes about_us_ani {
@@ -1435,7 +1435,7 @@ input:focus, select:focus, button:focus{
         margin: 0px;
         margin-left: 10%;
         left: -10px;
-        height: 500px;
+        height: 350px;
         overflow: hidden;
     }
     .shirt {
@@ -1490,8 +1490,8 @@ input:focus, select:focus, button:focus{
         color: var(--color2);
         text-align: right;
         line-height: 110px;
-        padding: 10px;
-        right: 51px;
+        padding: 0;
+        right: 10px;
         /* padding-left: 51px; */
         z-index: 3;
     }
@@ -1528,7 +1528,7 @@ input:focus, select:focus, button:focus{
     }
     .slide_end{
         opacity: 1;
-        top: 0;
+        top: -30px;
     }
     .paragraph2 {
         top: 25px;
@@ -1597,13 +1597,14 @@ input:focus, select:focus, button:focus{
     .animation_pen {
         position: absolute;
         top: unset;
-        bottom: -60px;
+        bottom: -75px;
         margin: auto;
         left: 50%;
-        transform: translateX(-50%);
-        /* right: -10px; */
+        right: 0;
+        margin-left: -50px;
         height: 500px;
         width: 500px;
+        transform: scale(0.8) translateX(-50%);
     }
     .bar1 {
         position: absolute;
@@ -2626,6 +2627,9 @@ input:focus, select:focus, button:focus{
     }
     .amount_left {
         font-size: 1em;
+    }
+    .shirt_container {
+        height: 350px;
     }
 
 }
