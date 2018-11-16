@@ -1093,7 +1093,7 @@ a:hover::after{
     height: 60px;
 }
 .payment_outer .paragraph_block:nth-child(4) {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .payment_outer select {
@@ -2180,7 +2180,7 @@ input:focus, select:focus, button:focus{
         position: relative;
     }
     .item_block .paragraph_block span {
-        top: 5px;
+        top: 3px;
         z-index: 5;
         position: relative;
     }
@@ -2188,12 +2188,12 @@ input:focus, select:focus, button:focus{
         top: 0;
         margin-top: 5px;
         display: inline-block;
-        border: 2px solid var(--color3);
+        border: 2px solid var(--color2);
         cursor: pointer;
         font-weight: bold;
         text-align: center;
         font-size: 0.8em;
-        height: 25px;
+        height: 20px;
         width: 47%;
         padding: 6px 0;
         overflow: hidden;
@@ -2238,7 +2238,7 @@ input:focus, select:focus, button:focus{
         height: 50px;
         position: relative;
         top: -89px;
-        background-color: var(--color3);
+        background-color: var(--color2);
         width: -webkit-fill-available;
     }
     .item_description .block-hover,  .payment_final .paragraph_block:nth-child(2) .chose_payment:first-child .block-hover{
@@ -2426,14 +2426,14 @@ input:focus, select:focus, button:focus{
         background-color: var(--color1);
     }
     .payment_outer .paragraph_block {
-        height: 50px;
+        height: 41px;
         background-color: var(--color2);
     }
     .payment_outer .paragraph_block:first-child {
         height: 60px;
     }
     .payment_final .paragraph_block:nth-child(4) {
-        margin-top: 8px;
+        margin-top: 2px;
     }
     
     .payment_outer select {
@@ -2446,7 +2446,7 @@ input:focus, select:focus, button:focus{
         width: 100%;
         color: var(--color3);
         padding: 8px;
-        font-size: 1.1em;
+        font-size: 0.8em;
         border: 2px solid var(--color3);
         display: block;
         border-radius: 0px;
@@ -2457,7 +2457,7 @@ input:focus, select:focus, button:focus{
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
     .payment_title {
-        margin-top: 9px;
+        margin-top: 5px;
         margin-left: 0px;
         display: inline-block;
         border: none;
@@ -2465,13 +2465,13 @@ input:focus, select:focus, button:focus{
     }
     .first_name, .last_name, .address, .building, .postal_code, .city, .expiration_date_block, .cvc_block, .card_number{
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
-        height: 41px;
+        height: 33px;
         z-index: 5;
         box-sizing: border-box;
         background-color: unset;
         border: 2px solid var(--color3);
         padding-left: 10px;
-        font-size: 1em;
+        font-size: 0.8em;
         width: 100%;
         position: relative;
         display: inline-block;
@@ -2494,7 +2494,7 @@ input:focus, select:focus, button:focus{
         outline: none;
     }
     .first_name_block {
-        height: 41px;
+        height: 33px;
         position: relative;
         display: inline-block;
         width: 47%;
@@ -2529,9 +2529,9 @@ input:focus, select:focus, button:focus{
         display: block;
         right: 0;
         top: 0;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 0;
-        height: 255px;
+        height: 167px;
         width: 100%;
         background-color: unset;
     }
@@ -2544,7 +2544,7 @@ input:focus, select:focus, button:focus{
     }
     .payment_final .payment_title {
         position: absolute;
-        top: -70px;
+        top: -45px;
     }
     .payment_final .paragraph_block:nth-child(2) {
         margin-top: -65px;
@@ -2552,7 +2552,7 @@ input:focus, select:focus, button:focus{
     .chose_payment:first-child svg, .chose_payment:last-child svg {
         height: 23px;
         width: auto;
-        top: 8px;
+        top: 5px;
         position: absolute;
         left: unset;
         z-index: 5;
@@ -2562,7 +2562,7 @@ input:focus, select:focus, button:focus{
     .chose_payment:last-child svg {
         left: unset;
         height: 63px;
-        top: -11px;
+        top: -14px;
         right: 50%;
         transform: translateX(50%);
     }
@@ -2582,17 +2582,17 @@ input:focus, select:focus, button:focus{
     .card_block .paragraph_block:last-child {
         width: 100%;
         position: absolute;
-        top: 110px;
+        top: 103px;
     }
     .submit_button {
         border: 2px solid var(--color3);
-        height: 41px;
+        height: 33px;
         width: 100%;
         background-color: var(--color2);
         font-size: 1em;
         font-weight: bold;
         cursor: pointer;
-        color: var(--color2);
+        color: var(--color3);
     }
     .payment_final .paragraph_block:nth-child(4) .first_name_block:hover .submit_button span {
         color: var(--color1);
@@ -2615,10 +2615,10 @@ input:focus, select:focus, button:focus{
     }
     .card_block {
         position: relative;
-        height: 91px;
+        height: 84px;
         width: 100%;
         bottom: unset;
-        margin-top: 4px;
+        margin-top: 7px;
         display: block;
     }
     .card_block .paragraph_block:first-child {
