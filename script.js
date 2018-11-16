@@ -349,7 +349,7 @@ $(document).ready(function(){
 $(document).scroll(function(){
     var x = $(document).scrollTop();
     console.log(x);
-    if(x>200){
+    if(x>110){
         var y = $(document).width();
         if(y<700){
             $('.buy:first-child').css({'opacity': 0});
@@ -358,6 +358,7 @@ $(document).scroll(function(){
         }
     }
     else{
+        var y = $(document).width();
         if(y<700){
             $('.buy:first-child').css({'opacity': 1});
             $('.buy:last-child').css({'opacity': 0});
