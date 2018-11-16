@@ -1516,7 +1516,7 @@ input:focus, select:focus, button:focus{
         display: block;
         overflow: hidden;
         height: 50px;
-        padding-right: 10px;
+        padding-right: 0;
     }
     .paragraph_block span {
         position: relative;
@@ -1528,7 +1528,7 @@ input:focus, select:focus, button:focus{
     }
     .slide_end{
         opacity: 1;
-        top: -35px;
+        top: 0;
     }
     .paragraph2 {
         top: 25px;
@@ -2062,15 +2062,18 @@ input:focus, select:focus, button:focus{
     }
     .description_block {
         position: relative;
-        height: 500px;
-        width: 100%;
+        height: fit-content;
+        margin: 5%;
+        padding: 5px;
+        border: 3px solid var(--color3);
+        width: -webkit-fill-available;
         display: block;
     }
     .description_title, .payment_title, .order_main_title  {
         font-weight: bold;
-        margin-top: 50px;
+        margin-top: 0px;
         padding-bottom: 5px;
-        border-bottom: 2px solid var(--color2);
+        border-bottom: none;
         position: relative;
         font-size: 2.6em;
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
@@ -2089,11 +2092,12 @@ input:focus, select:focus, button:focus{
     .amount_left {
         color: var(--color2);
         position: absolute;
-        top: 363px;
+        top: unset;
+        bottom: 65px;
         font-size: 1.5em;
         font-weight: bold;
         padding: 10px;
-        right: 0px;
+        right: 5px;
         border: 2px solid var(--color2);
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
@@ -2117,12 +2121,12 @@ input:focus, select:focus, button:focus{
     }
     
     .shirts, .shirt_block_container  {
-        height: 553px;
+        height: 395px;
         width: -webkit-fill-available;
         z-index: 5;
-        top: 55px;
-        margin: 0 10px;
-        position: relative;
+        top: 56px;
+        margin: 0 5%;
+        position: absolute;
         opacity: 1;
         display: block;
         overflow: hidden;
@@ -2155,9 +2159,9 @@ input:focus, select:focus, button:focus{
         position: relative;
         display: block;
         width: -webkit-fill-available;
-        margin: 0 10px;
-        height: 580px;
-        top: -50px;
+        margin: 0;
+        height: fit-content;
+        top: 25px;
         left: 0;
     }
     .ul {
@@ -2174,6 +2178,7 @@ input:focus, select:focus, button:focus{
         position: relative;
     }
     .chose, .chose_payment {
+        top: 0;
         margin-top: 5px;
         display: inline-block;
         border: 2px solid var(--color2);
@@ -2191,9 +2196,10 @@ input:focus, select:focus, button:focus{
         float: right;
     }
     .text_info, .size, .details {
+        top: 0;
         font-size: 1.5em;
         position: relative;
-        margin-top: 25px;
+        margin-top: 0;
     }
     .item_description .paragraph_block {
         height: fit-content;
@@ -2232,7 +2238,8 @@ input:focus, select:focus, button:focus{
         top: -88px;
     }
     .item_description .paragraph_block:nth-child(3) {
-        top: -500px;
+        margin-bottom: 375px;
+        top: 0;
         position: relative;
     }
     .chose:last-child{
@@ -2292,11 +2299,12 @@ input:focus, select:focus, button:focus{
         position: relative;
         display: block;
         clear: both;
-        margin: 0 10px;
+        top: 0px;
+        margin: 0 5%;
         padding: 0 0 10px 10px;
-        top: 30px;
+        margin-top: 100px;
         margin-bottom: 50px;
-        border: 2px solid var(--color3);
+        border: 3px solid var(--color3);
         font-size: 1em;
         color: var(--color2);
     }
@@ -2323,7 +2331,7 @@ input:focus, select:focus, button:focus{
         display: inline-block;
     }
     .order_info .paragraph_block:nth-child(1){
-        top: -120px;
+        top: -61px;
         position: absolute;
     }
     .order_info_block:nth-child(3) {
@@ -2394,7 +2402,7 @@ input:focus, select:focus, button:focus{
         position: relative;
         display: block;
         clear: none;
-        margin: 0 10px;
+        margin: 0 5%;
         top: 30px;
     }
     .payment_enter_infos {
@@ -2510,7 +2518,7 @@ input:focus, select:focus, button:focus{
         margin-bottom: 80px;
         height: 255px;
         width: 100%;
-        background-color: var(--color3);
+        background-color: unset;
     }
     .chose_payment {
         background-color: var(--color1);
