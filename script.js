@@ -9,6 +9,7 @@ $(document).ready(function(){
     var clearing2 = true ;
     var clearing3 = true ;
 
+    phoneScrollInit();
     $('.chose:first-child').css({'background-color': 'var(--color2)', 'color': 'var(--color1)'});
 
     delayAni('about_us_title .paragraph_block span', 'slide', 0);
@@ -339,11 +340,27 @@ $(document).ready(function(){
     $('a').click(function(){
         $(".landing_page").addClass('scroll_top');
     });
+
 });
+
 
 
 $(document).scroll(function(){
     var x = $(document).scrollTop();
+    if(x>200 && x>250){
+        var y = $(document).width();
+        if(y<700){
+            $('.buy:first-child').css({'opacity': 1});
+            $('.buy:last-child').css({'opacity': 0});
+
+        }
+    }
+    else{
+        if(y<700){
+            $('.buy:first-child').css({'opacity': 0});
+            $('.buy:last-child').css({'opacity': 1});
+        }
+    }
     if(x>=300){
         delayAni('block:nth-child(1) .paragraph_block span', 'slide', 0);
     }
@@ -407,6 +424,14 @@ $(document).scroll(function(){
 // delay time before loading new link
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 400 );
+}
+
+// phone scroll initiation effect
+function phoneScrollInit() {
+    var x = $(document).width();
+    if(x<700){
+        $('.buy:first-child').css({'opacity': 1});
+    }
 }
 
 // delay animation
