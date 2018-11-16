@@ -2124,16 +2124,17 @@ input:focus, select:focus, button:focus{
         height: 395px;
         width: -webkit-fill-available;
         z-index: 5;
+        /* padding: 0 5%; */
         top: 56px;
         margin: 0 5%;
         position: absolute;
         opacity: 1;
         display: block;
-        overflow: hidden;
+        overflow: v;
         float: unset;
     }
     .shirt_animate {
-        margin-left: -450px;
+    left: 0;
     }
     .shirts {
         clear: none;
@@ -2161,7 +2162,8 @@ input:focus, select:focus, button:focus{
         width: -webkit-fill-available;
         margin: 0;
         height: fit-content;
-        top: 25px;
+        margin-top: 50px;
+        margin-bottom: 30px;
         left: 0;
     }
     .ul {
@@ -2297,7 +2299,7 @@ input:focus, select:focus, button:focus{
         height: fit-content;
         width: -webkit-fill-available;
         position: relative;
-        display: block;
+        display: none;
         clear: both;
         top: 0px;
         margin: 0 5%;
@@ -2400,7 +2402,7 @@ input:focus, select:focus, button:focus{
         height: fit-content;
         width: -webkit-fill-available;
         position: relative;
-        display: block;
+        display: none;
         clear: none;
         margin: 0 5%;
         top: 30px;
@@ -2614,3 +2616,16 @@ input:focus, select:focus, button:focus{
         width: 100%;
     }
     }
+@media only screen and (max-width: 400px) {
+    #logo {
+        font-size: 1.5em;
+        top: 18px;
+    }
+    .description_title, .payment_title, .order_main_title {
+        font-size: 1.9em;
+    }
+    .amount_left {
+        font-size: 1em;
+    }
+
+}

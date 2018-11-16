@@ -231,7 +231,8 @@ $(document).ready(function(){
         else {
             $('.item_description .error_mess').css({'opacity': 0});
 
-            $('.item_block').css({'height': 'fit-content'});
+            $('.order_info').css({'display': 'block'});
+            $('.payment_outer').css({'display': 'block'});
             $('html, body').animate({ scrollTop: '580' }, 500);
             delayAni('payment_title', 'slide', 500);
             delayAni('order_main_title', 'slide', 500);
@@ -347,7 +348,8 @@ $(document).ready(function(){
 
 $(document).scroll(function(){
     var x = $(document).scrollTop();
-    if(x>200 && x>250){
+    console.log(x);
+    if(x>200 && x<250){
         var y = $(document).width();
         if(y<700){
             $('.buy:first-child').css({'opacity': 1});
