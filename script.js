@@ -192,22 +192,22 @@ $(document).ready(function(){
         else if($(this).index() === 1){
             selected_payment = [false, true];
         }
-        $('.chose_payment').css({'background-color': 'var(--color1)', 'color': 'var(--color2)'});
-        $('.chose_payment svg').css({'fill': 'var(--color2)'});
-        $(this).find('svg').css({'fill': 'var(--color1)'});
-        $(this).css({'background-color': 'var(--color2)', 'color': 'var(--color1)'});
+        $('.chose_payment').css({'background-color': 'var(--color2)', 'color': 'var(--color3)'});
+        $('.chose_payment svg').css({'fill': 'var(--color3)'});
+        $(this).find('svg').css({'fill': 'var(--color2)'});
+        $(this).css({'background-color': 'var(--color3)', 'color': 'var(--color2)'});
     });
 
 
     $('.chose_payment').mouseover(function(){
-        $(this).find('svg').css({'fill': 'var(--color1)'});
+        $(this).find('svg').css({'fill': 'var(--color2)'});
     });
     $('.chose_payment').mouseleave(function(){
         if($(this).index() === 0 && !selected_payment[0]){
-            $(this).find('svg').css({'fill': 'var(--color2)'});
+            $(this).find('svg').css({'fill': 'var(--color3)'});
         }
         else if($(this).index() === 1 && !selected_payment[1]){
-            $(this).find('svg').css({'fill': 'var(--color2)'});
+            $(this).find('svg').css({'fill': 'var(--color3)'});
         }
             
     });
@@ -227,6 +227,7 @@ $(document).ready(function(){
                         $('.item_description .errors').removeClass('errors_width2');
                     },500);
                 },500);
+
         }
         else {
             $('.item_description .error_mess').css({'opacity': 0});

@@ -2074,6 +2074,7 @@ input:focus, select:focus, button:focus{
         display: block;
     }
     .description_title, .payment_title, .order_main_title  {
+        color: var(--color3);
         font-weight: bold;
         margin-top: 0px;
         padding-bottom: 5px;
@@ -2187,13 +2188,13 @@ input:focus, select:focus, button:focus{
         top: 0;
         margin-top: 5px;
         display: inline-block;
-        border: 2px solid var(--color2);
+        border: 2px solid var(--color3);
         cursor: pointer;
         font-weight: bold;
         text-align: center;
         font-size: 0.8em;
         height: 25px;
-        width: 48%;
+        width: 47%;
         padding: 6px 0;
         overflow: hidden;
     }
@@ -2237,7 +2238,7 @@ input:focus, select:focus, button:focus{
         height: 50px;
         position: relative;
         top: -89px;
-        background-color: var(--color2);
+        background-color: var(--color3);
         width: -webkit-fill-available;
     }
     .item_description .block-hover,  .payment_final .paragraph_block:nth-child(2) .chose_payment:first-child .block-hover{
@@ -2284,7 +2285,7 @@ input:focus, select:focus, button:focus{
         margin-left: 6px;
     }
     .errors_width {
-        width: 349px;
+        width: 100%;
     }
     .payment_enter_infos .errors_width, .payment_enter_infos .error_mess{
         width: 488px;
@@ -2295,10 +2296,10 @@ input:focus, select:focus, button:focus{
     }
     .order_info .errors_width2{
         width: 0;
-        right: 500px;
+        right: 0px;
     }
     .payment_enter_infos .errors_width2 {
-        right: 6px;
+        right: 0px;
     }
     
     .order_info {
@@ -2410,25 +2411,29 @@ input:focus, select:focus, button:focus{
         position: relative;
         display: none;
         clear: none;
+        padding: 5px;
+        background-color: var(--color2);
+        border: 3px solid var(--color3);
         margin: 0 5%;
-        top: 30px;
+        top: 0px;
     }
     .payment_enter_infos {
         position: relative;
         display: block;
         left: 0;
-        height: 361px;
+        height: fit-content;
         width: 100%;
         background-color: var(--color1);
     }
     .payment_outer .paragraph_block {
         height: 50px;
+        background-color: var(--color2);
     }
     .payment_outer .paragraph_block:first-child {
         height: 60px;
     }
-    .payment_outer .paragraph_block:nth-child(4) {
-        margin-top: 20px;
+    .payment_final .paragraph_block:nth-child(4) {
+        margin-top: 8px;
     }
     
     .payment_outer select {
@@ -2439,9 +2444,10 @@ input:focus, select:focus, button:focus{
         margin-left: 0;
         position: relative;
         width: 100%;
+        color: var(--color3);
         padding: 8px;
         font-size: 1.1em;
-        border: 2px solid var(--color2);
+        border: 2px solid var(--color3);
         display: block;
         border-radius: 0px;
         background-image: url(drop-down-arrow.png);
@@ -2451,10 +2457,11 @@ input:focus, select:focus, button:focus{
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
     .payment_title {
-        margin-top: 0px;
-        margin-left: 6px;
+        margin-top: 9px;
+        margin-left: 0px;
         display: inline-block;
         border: none;
+        color: var(--color3);
     }
     .first_name, .last_name, .address, .building, .postal_code, .city, .expiration_date_block, .cvc_block, .card_number{
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
@@ -2462,7 +2469,7 @@ input:focus, select:focus, button:focus{
         z-index: 5;
         box-sizing: border-box;
         background-color: unset;
-        border: 2px solid var(--color2);
+        border: 2px solid var(--color3);
         padding-left: 10px;
         font-size: 1em;
         width: 100%;
@@ -2471,14 +2478,14 @@ input:focus, select:focus, button:focus{
     }
     .payment_outer input:focus {
         outline: none;
-        background-color: var(--color2);
-        color: var(--color1);
-    }
-    input::placeholder {
+        background-color: var(--color3);
         color: var(--color2);
     }
+    input::placeholder {
+        color: var(--color3);
+    }
     input:hover::placeholder {
-        color: var(--color1);
+        color: var(--color2);
     }
     .payment_outer input:focus::placeholder {
         color: white;
@@ -2490,12 +2497,13 @@ input:focus, select:focus, button:focus{
         height: 41px;
         position: relative;
         display: inline-block;
-        width: 49%;
+        width: 47%;
+        color: var(--color3);
         overflow: hidden;
         margin-left: 0;
     }
     .first_name_block:nth-child(2) {
-        margin-left: 1%;
+        margin-left: 0;
         width: 49%;
         float: right;
     }
@@ -2506,32 +2514,32 @@ input:focus, select:focus, button:focus{
         opacity: 1;
     }
     .payment_outer .paragraph_block:nth-child(6) .first_name_block, .payment_outer .paragraph_block:nth-child(7) .first_name_block, .payment_outer .paragraph_block:nth-child(8) .first_name_block, .payment_outer .paragraph_block:nth-child(9) .first_name_block, .payment_outer .paragraph_block:nth-child(10) .first_name_block{
-        width: 100%;
+        width: -webkit-fill-available;
     }
     .address, .building, .postal_code, .city {
         width: 100%;
     }
     .entered{
-        background-color: var(--color2);
-        color: var(--color1);
+        background-color: var(--color3);
+        color: var(--color2);
     }
-    
     
     .payment_final {
         position: relative;
         display: block;
         right: 0;
         top: 0;
-        margin-top: 125px;
-        margin-bottom: 80px;
+        margin-top: 100px;
+        margin-bottom: 0;
         height: 255px;
         width: 100%;
         background-color: unset;
     }
     .chose_payment {
-        background-color: var(--color1);
+        background-color: var(--color2);
         position: relative;
         float: left;
+        color: var(--color3);
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
     .payment_final .payment_title {
@@ -2577,10 +2585,10 @@ input:focus, select:focus, button:focus{
         top: 110px;
     }
     .submit_button {
-        border: 2px solid var(--color2);
+        border: 2px solid var(--color3);
         height: 41px;
         width: 100%;
-        background-color: var(--color1);
+        background-color: var(--color2);
         font-size: 1em;
         font-weight: bold;
         cursor: pointer;
@@ -2606,10 +2614,11 @@ input:focus, select:focus, button:focus{
         float: right;
     }
     .card_block {
-        position: absolute;
+        position: relative;
         height: 91px;
         width: 100%;
-        bottom: 49px;
+        bottom: unset;
+        margin-top: 4px;
         display: block;
     }
     .card_block .paragraph_block:first-child {
@@ -2621,7 +2630,7 @@ input:focus, select:focus, button:focus{
     .card_number {
         width: 100%;
     }
-    }
+}
 @media only screen and (max-width: 400px) {
     #logo {
         font-size: 1.5em;
@@ -2631,7 +2640,7 @@ input:focus, select:focus, button:focus{
         margin-top: 13px;
     }
     .description_title, .payment_title, .order_main_title {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
     .amount_left {
         font-size: 1em;
