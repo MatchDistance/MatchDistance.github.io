@@ -2126,7 +2126,7 @@ input:focus, select:focus, button:focus{
     }
     
     .shirts, .shirt_block_container  {
-        height: 395px;
+        height: 300px;
         width: -webkit-fill-available;
         z-index: 5;
         top: 10px;
@@ -2444,7 +2444,7 @@ input:focus, select:focus, button:focus{
         position: relative;
         width: 100%;
         color: var(--color3);
-        padding: 8px;
+        padding: 7px;
         font-size: 0.8em;
         border: 2px solid var(--color3);
         display: block;
@@ -2549,7 +2549,7 @@ input:focus, select:focus, button:focus{
         margin-top: -60px;
     }
     .payment_final .paragraph_block:nth-child(1) {
-        bottom: 10px;
+        bottom: -2px;
     }
     .chose_payment:first-child svg, .chose_payment:last-child svg {
         height: 23px;
@@ -2558,7 +2558,7 @@ input:focus, select:focus, button:focus{
         position: absolute;
         left: unset;
         z-index: 5;
-        fill: var(--color2);
+        fill: var(--color3);
         transition: 0.2s cubic-bezier(.215,.61,.355,1);
     }
     .chose_payment:last-child svg {
@@ -2584,7 +2584,7 @@ input:focus, select:focus, button:focus{
     .card_block .paragraph_block:last-child {
         width: 100%;
         position: absolute;
-        top: 103px;
+        top: 99px;
     }
     .submit_button {
         border: 2px solid var(--color3);
