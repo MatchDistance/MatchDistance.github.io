@@ -8,6 +8,7 @@
     --color1: #292929;
     --color2: #ffffff;
     --color3: #3f83ff;
+    --color3: #da0000;
 
 }
 
@@ -2235,7 +2236,7 @@ input:focus, select:focus, button:focus{
     .block-hover {
         height: 50px;
         position: relative;
-        top: -89px;
+        top: -98px;
         background-color: var(--color2);
         width: -webkit-fill-available;
     }
@@ -2493,7 +2494,7 @@ input:focus, select:focus, button:focus{
         outline: none;
     }
     .first_name_block {
-        height: 33px;
+        height: 52px;
         position: relative;
         display: inline-block;
         width: 47%;
@@ -2530,7 +2531,7 @@ input:focus, select:focus, button:focus{
         top: 0;
         margin-top: 50px;
         margin-bottom: 0;
-        height: 167px;
+        height: 184px;
         width: 100%;
         background-color: unset;
     }
@@ -2588,7 +2589,7 @@ input:focus, select:focus, button:focus{
     }
     .submit_button {
         border: 2px solid var(--color3);
-        height: 33px;
+        height: 50px;
         width: 100%;
         background-color: var(--color2);
         font-size: 1em;
@@ -2660,6 +2661,12 @@ input:focus, select:focus, button:focus{
     .shirt_block_container {
         border: 3px solid var(--color3);
         top: 80px;
+    }
+    .chose_payment:first-child span {
+        color: var(--color2);
+    }
+    .chose_payment:first-child svg {
+        fill: var(--color2);
     }
 }
 @media only screen and (max-width: 400px) {
