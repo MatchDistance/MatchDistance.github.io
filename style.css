@@ -2085,12 +2085,12 @@ input:focus, select:focus, button:focus{
     }
     .price {
         position: relative;
-        font-size: 1.5em;
+        font-size: 1.3em;
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
     .materials, .made, .text_info, .size, .details, .error_mess {
         position: relative;
-        font-size: 1em;
+        font-size: 0.8em;
         color: var(--color3);
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
@@ -2098,7 +2098,7 @@ input:focus, select:focus, button:focus{
         color: var(--color2);
         position: absolute;
         top: unset;
-        bottom: 65px;
+        bottom: 85px;
         font-size: 0.8em;
         font-weight: bold;
         padding: 10px;
@@ -2548,7 +2548,10 @@ input:focus, select:focus, button:focus{
         top: -45px;
     }
     .payment_final .paragraph_block:nth-child(2) {
-        margin-top: -65px;
+        margin-top: -60px;
+    }
+    .payment_final .paragraph_block:nth-child(1) {
+        bottom: 10px;
     }
     .chose_payment:first-child svg, .chose_payment:last-child svg {
         height: 23px;
@@ -2648,6 +2651,13 @@ input:focus, select:focus, button:focus{
     }
     .description_block .paragraph_block:nth-child(6), .description_block .paragraph_block:nth-child(8), .description_block .paragraph_block:nth-child(13) {
         margin-top: 20px;
+    }
+    .payment_enter_infos .paragraph_block:nth-child(3) {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .order:hover span {
+        color: var(--color3);
     }
 }
 @media only screen and (max-width: 400px) {
