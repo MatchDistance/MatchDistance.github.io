@@ -433,7 +433,7 @@ function delay (URL) {
 function phoneScrollInit() {
     var x = $(document).width();
     if(x<700){
-        $('.choice-outer a:last-child .buy').css({'opacity': 1});
+        $('.choice-outer a:first-child .buy').css({'opacity': 1});
     }
 }
 

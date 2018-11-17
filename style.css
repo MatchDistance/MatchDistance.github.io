@@ -2099,7 +2099,7 @@ input:focus, select:focus, button:focus{
         position: absolute;
         top: unset;
         bottom: 65px;
-        font-size: 1.5em;
+        font-size: 0.8em;
         font-weight: bold;
         padding: 10px;
         right: 5px;
@@ -2637,14 +2637,26 @@ input:focus, select:focus, button:focus{
     .payment_enter_infos .paragraph_block:nth-child(2){
         margin-top: 10px;
     }
+    input {
+        border-radius: none;
+    }
+    .chose {
+        border: 2px solid var(--color2);
+    }
+    .chose:hover span {
+        color: var(--color1);
+    }
+    .description_block .paragraph_block:nth-child(6), .description_block .paragraph_block:nth-child(8), .description_block .paragraph_block:nth-child(13) {
+        margin-top: 20px;
+    }
 }
 @media only screen and (max-width: 400px) {
     #logo {
         font-size: 1.5em;
         top: 18px;
     }
-    #logo::after {
-        margin-top: 13px;
+    #logo::after, #pre_order::after {
+        margin-top: 12px;
     }
     .description_title, .payment_title, .order_main_title {
         font-size: 1.8em;
