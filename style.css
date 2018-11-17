@@ -2188,7 +2188,7 @@ input:focus, select:focus, button:focus{
         top: 0;
         margin-top: 5px;
         display: inline-block;
-        border: 2px solid var(--color2);
+        border: 2px solid var(--color3);
         cursor: pointer;
         font-weight: bold;
         text-align: center;
@@ -2232,7 +2232,7 @@ input:focus, select:focus, button:focus{
         z-index: 5;
     }
     .order:hover span, .chose:hover span, .chose_payment:hover span{
-        color: var(--color1);
+        color: var(--color2);
     }
     .block-hover {
         height: 50px;
@@ -2423,11 +2423,12 @@ input:focus, select:focus, button:focus{
         left: 0;
         height: fit-content;
         width: 100%;
-        background-color: var(--color1);
+        background-color: var(--color2);
     }
     .payment_outer .paragraph_block {
+        margin-top: 0;
         height: 41px;
-        background-color: var(--color2);
+        background-color: unset;
     }
     .payment_outer .paragraph_block:first-child {
         height: 60px;
@@ -2457,7 +2458,7 @@ input:focus, select:focus, button:focus{
         transition: 0.5s cubic-bezier(.215,.61,.355,1);
     }
     .payment_title {
-        margin-top: 5px;
+        margin-top: 4px;
         margin-left: 0px;
         display: inline-block;
         border: none;
@@ -2629,6 +2630,12 @@ input:focus, select:focus, button:focus{
     }
     .card_number {
         width: 100%;
+    }
+    .payment_outer .block-hover{
+        background-color: var(--color3);
+    }
+    .payment_enter_infos .paragraph_block:nth-child(2){
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 400px) {
