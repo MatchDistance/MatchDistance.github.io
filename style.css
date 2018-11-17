@@ -2098,7 +2098,7 @@ input:focus, select:focus, button:focus{
         color: var(--color2);
         position: absolute;
         top: unset;
-        bottom: 85px;
+        bottom: 95px;
         font-size: 0.8em;
         font-weight: bold;
         padding: 10px;
@@ -2129,13 +2129,11 @@ input:focus, select:focus, button:focus{
         height: 395px;
         width: -webkit-fill-available;
         z-index: 5;
-        /* padding: 0 5%; */
-        top: 45px;
+        top: 10px;
         margin: 0 5%;
         position: absolute;
         opacity: 1;
         display: block;
-        overflow: v;
         float: unset;
     }
     .shirt_animate {
@@ -2641,7 +2639,7 @@ input:focus, select:focus, button:focus{
         margin-top: 10px;
     }
     input {
-        border-radius: none;
+        border-radius: 0;
     }
     .chose {
         border: 2px solid var(--color2);
@@ -2658,6 +2656,10 @@ input:focus, select:focus, button:focus{
     }
     .order:hover span {
         color: var(--color3);
+    }
+    .shirt_block_container {
+        border: 3px solid var(--color3);
+        top: 80px;
     }
 }
 @media only screen and (max-width: 400px) {
