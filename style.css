@@ -842,8 +842,12 @@ a:hover::after{
     display: inline-block;
     position: absolute;
     transition: 0.5s ease-out;
+    background-image: url('shirt_plane.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .shirts:last-child {
+    background-image: url('shirt_ground.png');
     left: 450px;
 }
 .shirts img{
@@ -1344,6 +1348,10 @@ input:focus, select:focus, button:focus{
         bottom: -145px;
     }
 }
+.content:first-child span {
+    text-shadow: 1px 1px 0 var(--color1), -1px -1px 0 var(--color1), 1px -1px 0 var(--color1), -1px 1px 0 var(--color1);
+}
+
 @media only screen and (max-width: 700px) {
     .header {
         position: fixed;
@@ -1503,7 +1511,7 @@ input:focus, select:focus, button:focus{
         left: 0;
     }
     #shirt_1 {
-        background-image: url('t_shirt_front.png');
+        background-image: url('shirt_plane.png');
         z-index: 2;
         top: 35px;
         left: -40px;
@@ -1517,7 +1525,7 @@ input:focus, select:focus, button:focus{
             opacity: 1;}
     }
     #shirt_2 {
-        background-image: url('t_shirt_front.png');
+        background-image: url('shirt_ground.png');
         z-index: 1;
         left: 50px;
         margin-left: 0;
@@ -2204,6 +2212,7 @@ input:focus, select:focus, button:focus{
         background-size: contain;
     }
     .shirts:last-child {
+        background-image: url('shirt_ground.png');
         left: 100%;
     }
     .shirts img{
