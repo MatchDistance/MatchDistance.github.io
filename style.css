@@ -2723,6 +2723,7 @@ input:focus, select:focus, button:focus{
         fill: var(--color2);
     }
     .plane_drop_gift {
+        transform: none;
         position: absolute;
         width: 300px;
         height: 300px;
