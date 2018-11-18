@@ -1294,9 +1294,20 @@ input:focus, select:focus, button:focus{
     }
 }
 .wind {
-    stroke-dasharray: 235;
-    stroke-dashoffset: 235;
-    animation: offset linear 1.5s forwards;
+    position: absolute;
+    right: 100px;
+    width: 50px;
+    stroke-dasharray: 130px;
+    stroke-dashoffset: 270px;
+    animation: offset ease-in-out 1s infinite, movement linear 1s infinite;
+}
+#wind2 {
+    right: 100px;
+    width: 50px;
+}
+@keyframes movement{
+    0%{margin-right: 0px;}
+    50%{margin-right: 30px;}
 }
 @media only screen and (max-width: 700px) {
     .header {
@@ -2685,6 +2696,15 @@ input:focus, select:focus, button:focus{
     }
     .pdg_plane {
         height: 150px;
+    }
+    .wind {
+        position: absolute;
+    right: 250px;
+    bottom: 100px;
+    width: 50px;
+    stroke-dasharray: 130px;
+    stroke-dashoffset: 270px;
+    animation: offset ease-in-out 1s infinite, movement linear 1s infinite;
     }
 }
 @media only screen and (max-width: 400px) {
