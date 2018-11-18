@@ -163,7 +163,7 @@ a:hover::after{
     left: 0;
     width: 700px;
     margin-left: 10%;
-    overflow: hidden;
+    overflow: visible;
 }
 .shirt {
     position: absolute;
@@ -176,9 +176,9 @@ a:hover::after{
     left: -60px;
 }
 #shirt_1 {
-    background-image: url('t_shirt_front.png');
+    background-image: url('shirt_plane.png');
     z-index: 2;
-    top: 10px;
+    top: 35px;
     animation: shirt_1 1s;
 }
 @keyframes shirt_1 {
@@ -189,8 +189,9 @@ a:hover::after{
         opacity: 1;}
 }
 #shirt_2 {
-    background-image: url('t_shirt_back.png');
+    background-image: url('shirt_ground.png');
     z-index: 1;
+    top: -60px;
     margin-left: 210px;
     animation: shirt_2 1s;
 }
@@ -1349,7 +1350,6 @@ input:focus, select:focus, button:focus{
     }
 }
 .content:first-child span {
-    text-shadow: 1px 1px 0 var(--color1), -1px -1px 0 var(--color1), 1px -1px 0 var(--color1), -1px 1px 0 var(--color1);
 }
 
 @media only screen and (max-width: 700px) {
@@ -1497,13 +1497,13 @@ input:focus, select:focus, button:focus{
         margin: 0px;
         margin-left: 10%;
         left: -10px;
-        height: 350px;
-        overflow: hidden;
+        height: 385px;
+        overflow: visible;
     }
     .shirt {
         position: absolute;
         display: block;
-        height: 500px;
+        height: 340px;
         width: -webkit-fill-available;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1513,8 +1513,8 @@ input:focus, select:focus, button:focus{
     #shirt_1 {
         background-image: url('shirt_plane.png');
         z-index: 2;
-        top: 35px;
-        left: -40px;
+        top: 87px;
+        left: -50px;
         animation: shirt_1 1s;
     }
     @keyframes shirt_1 {
@@ -1527,7 +1527,7 @@ input:focus, select:focus, button:focus{
     #shirt_2 {
         background-image: url('shirt_ground.png');
         z-index: 1;
-        left: 50px;
+        left: 80px;
         margin-left: 0;
         animation: shirt_2 1s;
     }
@@ -1544,7 +1544,7 @@ input:focus, select:focus, button:focus{
         font-size: 2em;
         font-weight: bold;
         position: absolute;
-        top: 145px;
+        top: 268px;
         margin: 0;
         opacity: 1;
         margin-right: 10px;
