@@ -1300,17 +1300,20 @@ input:focus, select:focus, button:focus{
     width: 50px;
     stroke-dasharray: 130px;
     stroke-dashoffset: 270px;
-    animation: offset linear 3s infinite, movement linear 1.5s infinite;
+    animation: offset linear 2s infinite, movement linear 4s infinite;
 }
 #wind2 {
     right: 100px;
     bottom: 200px;
+    animation-delay:1s;
 }
 @keyframes movement{
     0%{margin-right: 0px;
         opacity: 0;}
-    5%{opacity: 1;}
-    95%{opacity: 1;}
+    25%{opacity: 0;}
+    26%{opacity: 1;}
+    75%{opacity: 1;}
+    76%{opacity: 0;}
     100%{opacity: 0;
         margin-right: 30px;}
 }
