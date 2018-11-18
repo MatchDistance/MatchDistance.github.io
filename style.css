@@ -1299,7 +1299,7 @@ input:focus, select:focus, button:focus{
     width: 50px;
     stroke-dasharray: 130px;
     stroke-dashoffset: 270px;
-    animation: offset ease-in-out 1s infinite, movement linear 1s infinite;
+    animation: offset linear 3s infinite, movement linear 1.5s infinite;
 }
 #wind2 {
     right: 100px;
@@ -1307,7 +1307,9 @@ input:focus, select:focus, button:focus{
 }
 @keyframes movement{
     0%{margin-right: 0px;}
+    5%{opacity: 1;}
     50%{margin-right: 30px;}
+    95%{opacity: 0;}
 }
 @media only screen and (max-width: 700px) {
     .header {
@@ -2704,7 +2706,7 @@ input:focus, select:focus, button:focus{
     width: 50px;
     stroke-dasharray: 130px;
     stroke-dashoffset: 270px;
-    animation: offset ease-in-out 1s infinite, movement linear 1s infinite;
+    animation: offset linear 3s infinite, movement linear 1.5s infinite;
     }
 }
 @media only screen and (max-width: 400px) {
