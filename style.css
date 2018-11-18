@@ -1315,7 +1315,30 @@ input:focus, select:focus, button:focus{
     75%{opacity: 1;}
     76%{opacity: 0;}
     100%{opacity: 0;
-        margin-right: 30px;}
+        margin-right: 100px;}
+}
+.gift {
+    position: absolute;
+    height: 100px;
+    width: auto;
+    animation: 5s gift_animation linear infinite;
+}
+@keyframes gift_animation {
+    0%{
+        height:100px;
+        transform: rotate(20deg);
+        bottom: 200px;
+        right: 100px;
+    }
+    50%{
+        height:200px;
+        transform: rotate(180deg);
+        bottom: 0px;
+        right: 150px;
+    }
+    100%{
+        right: 400px;
+    }
 }
 @media only screen and (max-width: 700px) {
     .header {
@@ -2712,7 +2735,30 @@ input:focus, select:focus, button:focus{
     width: 50px;
     stroke-dasharray: 130px;
     stroke-dashoffset: 270px;
-    animation: offset linear 3s infinite, movement linear 1.5s infinite;
+    animation: offset linear 2s infinite, movement linear 4s infinite;
+    }
+    .gift {
+        position: absolute;
+        height: 100px;
+        width: auto;
+        animation: 5s gift_animation linear infinite;
+    }
+    @keyframes gift_animation {
+        0%{
+            height:100px;
+            transform: rotate(20deg);
+            bottom: 200px;
+            right: 100px;
+        }
+        50%{
+            height:200px;
+            transform: rotate(180deg);
+            bottom: 0px;
+            right: 150px;
+        }
+        100%{
+            right: 400px;
+        }
     }
 }
 @media only screen and (max-width: 400px) {
