@@ -140,14 +140,6 @@ a:hover::after{
 @keyframes offset {
     to {stroke-dashoffset:0;}
 }
-#content_3 svg {
-    width: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    transition: 0.8s cubic-bezier(0.6, 0.26, 0.49, 1.76);
-}
 
 @keyframes bounce {
     0%{
@@ -1280,22 +1272,31 @@ input:focus, select:focus, button:focus{
     width: 335px;
 }
 .plane_drop_gift {
-    position: relative;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: 100px;
+    right: 30px;
 }
 .pdg_plane {
     position: relative;
-    height: 300px;
+    height: 270px;
     width: auto;
     transform: scaleX(-1);
-    animation: up_down_plane 1s infinite ease-in-out;
+    animation: up_down_plane 4s infinite ease-in-out;
 }
 @keyframes up_down_plane {
     0% {
         margin-top: 0px;
     }
-    100% {
+    50% {
         margin-top: 50px;
     }
+}
+.wind {
+    stroke-dasharray: 235;
+    stroke-dashoffset: 235;
+    animation: offset linear 1.5s forwards;
 }
 @media only screen and (max-width: 700px) {
     .header {
@@ -1423,15 +1424,6 @@ input:focus, select:focus, button:focus{
     @keyframes offset {
         to {stroke-dashoffset:0;}
     }
-    #content_3 svg {
-        width: auto;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        transition: 0.8s cubic-bezier(0.6, 0.26, 0.49, 1.76);
-    }
-    
     @keyframes bounce {
         0%{
             opacity: 0;
@@ -1442,9 +1434,6 @@ input:focus, select:focus, button:focus{
             opacity: 1;
     
         }
-    }
-    
-    #content_3 {
     }
     
     .shirt_container {
@@ -1564,6 +1553,7 @@ input:focus, select:focus, button:focus{
     }
     .paragraph3 {
         opacity: 1;
+        top: 80px;
     }
     @keyframes paragraph {
         0% {right: 100px;
@@ -2685,6 +2675,16 @@ input:focus, select:focus, button:focus{
     }
     .chose_payment:first-child svg {
         fill: var(--color2);
+    }
+    .plane_drop_gift {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        bottom: 50px;
+        right: -100px;
+    }
+    .pdg_plane {
+        height: 150px;
     }
 }
 @media only screen and (max-width: 400px) {
