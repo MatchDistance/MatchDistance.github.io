@@ -1279,6 +1279,24 @@ input:focus, select:focus, button:focus{
 .card_number {
     width: 335px;
 }
+.plane_drop_gift {
+    position: relative;
+}
+.pdg_plane {
+    position: relative;
+    height: 300px;
+    width: auto;
+    transform: scaleX(-1);
+    animation: up_down_plane 1s infinite ease-in-out;
+}
+@keyframes up_down_plane {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 50px;
+    }
+}
 @media only screen and (max-width: 700px) {
     .header {
         position: fixed;
