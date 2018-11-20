@@ -2302,14 +2302,15 @@ input:focus, select:focus, button:focus{
         color: var(--color2);
     }
     .block-hover {
-        height: 50px;
+        height: 38px;
         position: relative;
-        top: -98px;
+        top: -72px;
         background-color: var(--color2);
         width: -webkit-fill-available;
     }
     .item_description .block-hover,  .payment_final .paragraph_block:nth-child(2) .chose_payment:first-child .block-hover{
-        top: -83px;
+        top: -71px;
+        height: 45px;
     }
     .item_description .paragraph_block:nth-child(3) {
         margin-bottom: 335px;
@@ -2323,11 +2324,11 @@ input:focus, select:focus, button:focus{
     }
     .block-in{
         transition: 0.2s cubic-bezier(.215,.61,.355,1);
-        margin-top: 50px;
+        margin-top: 38px;
     }
     .block-out{
         transition: 0.2s cubic-bezier(.215,.61,.355,1);
-        margin-top: 100px;
+        margin-top: 72px;
     }
     .errors, .error_mess {
         bottom: -55px;
@@ -2563,7 +2564,7 @@ input:focus, select:focus, button:focus{
         outline: none;
     }
     .first_name_block {
-        height: 52px;
+        height: 33px;
         position: relative;
         display: inline-block;
         width: 47%;
@@ -2639,7 +2640,7 @@ input:focus, select:focus, button:focus{
         transform: translateX(50%);
     }
     .chose_payment:last-child .block-hover {
-        top: -69px;
+        top: -46px;
     }
     .payment_final span {
         left: -8px;
@@ -2675,6 +2676,7 @@ input:focus, select:focus, button:focus{
     .card_block .paragraph_block:nth-child(1) .first_name_block, .payment_final .paragraph_block:nth-child(4) .first_name_block {
         margin-left: 0;
         width: 100%;
+        height: 50px;
     }
     .card_block .paragraph_block:nth-child(2) .first_name_block {
         margin-left: 0;
