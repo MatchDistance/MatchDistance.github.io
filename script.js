@@ -236,7 +236,13 @@ $(document).ready(function(){
 
             $('.order_info').css({'display': 'block'});
             $('.payment_outer').css({'display': 'block'});
-            $('html, body').animate({ scrollTop: '580' }, 500);
+            var y = $(document).width();
+            if(y>700){
+                $('html, body').animate({ scrollTop: '580' }, 500);
+            }
+            else{
+                $('html, body').animate({ scrollTop: '800' }, 500);
+            }
             delayAni('payment_title', 'slide', 500);
             delayAni('order_main_title', 'slide', 500);
             delayAni('chose_payment', 'slide', 700);
