@@ -241,7 +241,7 @@ $(document).ready(function(){
                 $('html, body').animate({ scrollTop: '580' }, 500);
             }
             else{
-                $('html, body').animate({ scrollTop: '800' }, 500);
+                $('html, body').animate({ scrollTop: '950' }, 500);
             }
             delayAni('payment_title', 'slide', 500);
             delayAni('order_main_title', 'slide', 500);

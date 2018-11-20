@@ -2204,14 +2204,13 @@ input:focus, select:focus, button:focus{
         width: -webkit-fill-available;
         z-index: 5;
         top: 0px;
-        margin: 0 5%;
         position: absolute;
         opacity: 1;
         display: block;
         float: unset;
     }
     .shirt_animate {
-    left: 0;
+        margin-left: -100%;
     }
     .shirts {
         clear: none;
@@ -2221,6 +2220,7 @@ input:focus, select:focus, button:focus{
         background-image: url('shirt_plane.png');
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: center;
     }
     .shirts:last-child {
         background-image: url('shirt_ground.png');
@@ -2350,9 +2350,13 @@ input:focus, select:focus, button:focus{
     }
     .errors {
         z-index: 3;
+        bottom: -290px;
+        font-size: 0.9em;
     }
     .error_mess {
-        width: 349px;
+        width: -webkit-fill-available;
+        bottom: -290px;
+        font-size: 0.9em;
         font-size: 1.2em;
         color: var(--color2);
         background-color: unset;
@@ -2741,6 +2745,7 @@ input:focus, select:focus, button:focus{
     .shirt_block_container {
         border: 3px solid var(--color3);
         top: 80px;
+        margin: 0 5%;
     }
     .chose_payment:first-child span {
         color: var(--color3);
@@ -2794,12 +2799,15 @@ input:focus, select:focus, button:focus{
             bottom: -50px;
         }
     }
-    .description_block .paragraph_block:last-child .block-hover, .payment_final .paragraph_block:last-child .block-hover { 
+    .description_block .paragraph_block:last-child .block-hover, .payment_final .paragraph_block:nth-child(4) .block-hover { 
         top: -100px;
         height: 60px;
     }
-    .description_block .paragraph_block:last-child .block-in, .payment_final .paragraph_block:last-child .block-in {
+    .description_block .paragraph_block:last-child .block-in, .payment_final .paragraph_block:nth-child(4) .block-in {
         margin-top: 55px;
+    }
+    .chose_payment:hover span {
+        color: var(--color2);
     }
 }
 @media only screen and (max-width: 400px) {
