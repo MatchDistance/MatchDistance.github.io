@@ -1354,7 +1354,7 @@ input:focus, select:focus, button:focus{
 }
 .required {
     position: relative;
-    top: 5px;
+    top: 0px;
     left: 5px;
     color: var(--color3);
     font-size: 0.8em;
@@ -2150,7 +2150,7 @@ input:focus, select:focus, button:focus{
     .description_title, .payment_title, .order_main_title  {
         color: var(--color3);
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 0px;
         padding-bottom: 5px;
         border-bottom: none;
         position: relative;
@@ -2210,7 +2210,7 @@ input:focus, select:focus, button:focus{
         float: unset;
     }
     .shirt_animate {
-        margin-left: -100%;
+        margin-left: -200%;
     }
     .shirts {
         clear: none;
@@ -2340,7 +2340,7 @@ input:focus, select:focus, button:focus{
         bottom: -55px;
         display: block;
         position: absolute;
-        height: 45px;
+        height: 20px;
         width: 0;
         background-color: var(--color2);
         transition: 0.5s ease-out;
@@ -2350,14 +2350,13 @@ input:focus, select:focus, button:focus{
     }
     .errors {
         z-index: 3;
-        bottom: -290px;
+        bottom: -30px;
         font-size: 0.9em;
     }
     .error_mess {
         width: -webkit-fill-available;
-        bottom: -290px;
+        bottom: -30px;
         font-size: 0.9em;
-        font-size: 1.2em;
         color: var(--color2);
         background-color: unset;
         transition: 0.5s ease-out;
@@ -2369,7 +2368,8 @@ input:focus, select:focus, button:focus{
         width: 100%;
     }
     .payment_enter_infos .errors_width, .payment_enter_infos .error_mess{
-        width: 488px;
+        width: -webkit-fill-available;
+        font-size: 0.9em;
     }
     .errors_width2{
         width: 0;
@@ -2747,11 +2747,14 @@ input:focus, select:focus, button:focus{
         top: 80px;
         margin: 0 5%;
     }
+    .chose_payment:first-child {
+        background-color: var(--color3);
+    }
     .chose_payment:first-child span {
-        color: var(--color3);
+        color: var(--color2);
     }
     .chose_payment:first-child svg {
-        fill: var(--color3);
+        fill: var(--color2);
     }
     .plane_drop_gift {
         transform: none;
@@ -2799,15 +2802,21 @@ input:focus, select:focus, button:focus{
             bottom: -50px;
         }
     }
-    .description_block .paragraph_block:last-child .block-hover, .payment_final .paragraph_block:nth-child(4) .block-hover { 
+    .description_block .paragraph_block:last-child .block-hover {
         top: -100px;
         height: 60px;
+    }
+    .payment_final .paragraph_block:nth-child(4) .block-hover {
+        top: -110px;
     }
     .description_block .paragraph_block:last-child .block-in, .payment_final .paragraph_block:nth-child(4) .block-in {
         margin-top: 55px;
     }
     .chose_payment:hover span {
         color: var(--color2);
+    }
+    .payment_final .error_mess, .payment_final .errors {
+        bottom: -100px;
     }
 }
 @media only screen and (max-width: 400px) {
