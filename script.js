@@ -192,9 +192,11 @@ $(document).ready(function(){
         else if($(this).index() === 1){
             selected_payment = [false, true];
         }
-        $('.chose_payment').css({'background-color': 'var(--color2)', 'color': 'var(--color3)'});
+        $('.chose_payment').css({'background-color': 'var(--color2)'});
+        $('.chose_payment span').css({'color': 'var(--color3)'});
         $('.chose_payment svg').css({'fill': 'var(--color3)'});
         $(this).find('svg').css({'fill': 'var(--color2)'});
+        $(this).find('span').css({'color': 'var(--color2)'});
         $(this).css({'background-color': 'var(--color3)', 'color': 'var(--color2)'});
     });
 

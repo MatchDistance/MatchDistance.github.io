@@ -191,7 +191,7 @@ a:hover::after{
 #shirt_2 {
     background-image: url('shirt_ground.png');
     z-index: 1;
-    top: -60px;
+    top: 25px;
     margin-left: 210px;
     animation: shirt_2 1s;
 }
@@ -1349,7 +1349,8 @@ input:focus, select:focus, button:focus{
         bottom: -145px;
     }
 }
-.content:first-child span {
+.chose_payment:hover span {
+    color: var(--color2);
 }
 
 @media only screen and (max-width: 700px) {
@@ -1513,16 +1514,18 @@ input:focus, select:focus, button:focus{
     #shirt_1 {
         background-image: url('shirt_plane.png');
         z-index: 2;
-        top: 87px;
-        left: -50px;
+        top: 65px;
+        left: -85px;
         animation: shirt_1 1s;
     }
     @keyframes shirt_1 {
         0% {top: -200px;
             opacity: 0;
         }
-        100% {top: 10px;
-            opacity: 1;}
+        100% {
+            top: 65px;
+            opacity: 1;
+            }
     }
     #shirt_2 {
         background-image: url('shirt_ground.png');
@@ -1535,8 +1538,10 @@ input:focus, select:focus, button:focus{
         0% {top: 200px;
             opacity: 0;
         }
-        100% {top: 0px;
-            opacity: 1;}
+        100% {
+            top: 25px;
+            opacity: 1;
+            }
     }
     .paragraph, .paragraph2, .paragraph3 {
         margin-right: 10px;
@@ -2497,6 +2502,7 @@ input:focus, select:focus, button:focus{
     }
     .payment_final .paragraph_block:nth-child(4) {
         margin-top: 2px;
+        height: 50px;
     }
     
     .payment_outer select {
@@ -2726,10 +2732,10 @@ input:focus, select:focus, button:focus{
         top: 80px;
     }
     .chose_payment:first-child span {
-        color: var(--color2);
+        color: var(--color3);
     }
     .chose_payment:first-child svg {
-        fill: var(--color2);
+        fill: var(--color3);
     }
     .plane_drop_gift {
         transform: none;
@@ -2745,12 +2751,12 @@ input:focus, select:focus, button:focus{
     }
     .wind {
         position: absolute;
-    right: 250px;
-    bottom: 100px;
-    width: 50px;
-    stroke-dasharray: 130px;
-    stroke-dashoffset: 270px;
-    animation: offset linear 2s infinite, movement linear 4s infinite;
+        right: 250px;
+        bottom: 100px;
+        width: 50px;
+        stroke-dasharray: 130px;
+        stroke-dashoffset: 270px;
+        animation: offset linear 2s infinite, movement linear 4s infinite;
     }
     .gift {
         position: absolute;
