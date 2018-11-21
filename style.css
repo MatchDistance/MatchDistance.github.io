@@ -2346,7 +2346,7 @@ input:focus, select:focus, button:focus{
         transition: 0.5s ease-out;
     }
     .payment_outer .errors, .payment_outer .error_mess {
-        bottom: 485px;
+        bottom: -285px;
     }
     .errors {
         z-index: 3;
@@ -2363,6 +2363,7 @@ input:focus, select:focus, button:focus{
     }
     .payment_enter_infos .errors, .payment_enter_infos .error_mess {
         margin-left: 6px;
+        height: 40px;
     }
     .errors_width {
         width: 100%;
@@ -2807,7 +2808,7 @@ input:focus, select:focus, button:focus{
         height: 60px;
     }
     .payment_final .paragraph_block:nth-child(4) .block-hover {
-        top: -110px;
+        top: -103px;
     }
     .description_block .paragraph_block:last-child .block-in, .payment_final .paragraph_block:nth-child(4) .block-in {
         margin-top: 55px;
