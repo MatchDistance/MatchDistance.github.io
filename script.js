@@ -239,6 +239,7 @@ $(document).ready(function(){
             var y = $(document).width();
             if(y>700){
                 $('html, body').animate({ scrollTop: '580' }, 500);
+                $('.landing_page').css({'height': '1200px'});
             }
             else{
                 $('html, body').animate({ scrollTop: '850' }, 500);

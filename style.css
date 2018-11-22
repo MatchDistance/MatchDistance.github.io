@@ -589,12 +589,12 @@ a:hover::after{
 }
 .landing_page {
     overflow: hidden;
-    height: fit-content;
+    height: 1200px;
     position: relative;
     top: 61px;
-    background-color: var(--color1); 
+    background-color: var(--color1);
     transition: 0.4s ease-in;
-    color: var(--color2); 
+    color: var(--color2);
 }
 .french_flag {
     position: absolute;
@@ -1075,7 +1075,7 @@ a:hover::after{
     position: relative;
     display: block;
     clear: both;
-    top: 170px;
+    top: 70px;
 }
 .payment_enter_infos {
     position: absolute;
@@ -1181,10 +1181,9 @@ input:focus, select:focus, button:focus{
 .payment_final {
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 50px;
     height: 290px;
     width: 350px;
-    background-color: var(--color3);
 }
 .chose_payment {
     background-color: var(--color1);
@@ -1194,7 +1193,7 @@ input:focus, select:focus, button:focus{
 }
 .payment_final .payment_title {
     position: absolute;
-    top: -70px;
+    top: -50px;
 }
 .payment_final .paragraph_block:nth-child(2) {
     margin-top: -65px;
@@ -1356,8 +1355,11 @@ input:focus, select:focus, button:focus{
     position: relative;
     top: 0px;
     left: 5px;
-    color: var(--color3);
+    color: var(--color2);
     font-size: 0.8em;
+}
+.payment_final .paragraph_block:nth-child(4) {
+    margin-top: 205px;
 }
 @media only screen and (max-width: 700px) {
     .header {
@@ -2818,6 +2820,12 @@ input:focus, select:focus, button:focus{
     }
     .payment_final .error_mess, .payment_final .errors {
         bottom: -100px;
+    }
+    .payment_final .paragraph_block:nth-child(4) {
+        margin-top: 0px;
+    }
+    .required {
+        color: var(--color3);
     }
 }
 @media only screen and (max-width: 400px) {
