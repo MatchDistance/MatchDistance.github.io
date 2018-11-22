@@ -185,7 +185,7 @@ a:hover::after{
     0% {top: -200px;
         opacity: 0;
     }
-    100% {top: 10px;
+    100% {top: 35px;
         opacity: 1;}
 }
 #shirt_2 {
@@ -199,7 +199,7 @@ a:hover::after{
     0% {top: 200px;
         opacity: 0;
     }
-    100% {top: 0px;
+    100% {top: 25px;
         opacity: 1;}
 }
 .paragraph, .paragraph2, .paragraph3 {
@@ -219,7 +219,7 @@ a:hover::after{
     z-index: 3;
 }
 .count_down {
-    background-color: white;
+    background-color: var(--color1);
     padding: 5px 10px;
     display: inline;
     border-radius: 3px;
@@ -728,7 +728,7 @@ a:hover::after{
     position: absolute;
     width: 100%;
     text-align: center;
-    background-color:#efefefba;
+    background-color:#4e4e4eba;
     opacity: 0;
     font-weight: bold;
     font-size: 3em;
