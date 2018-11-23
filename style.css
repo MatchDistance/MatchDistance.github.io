@@ -367,7 +367,7 @@ a:hover::after{
 }
 .up_down_animation {
     position: relative;
-    height: -webkit-fill-available;
+    height: 500px;
     animation: up_down_animation 5s infinite ease-in-out;
 }
 @keyframes up_down_animation {
@@ -589,7 +589,7 @@ a:hover::after{
 }
 .landing_page {
     overflow: hidden;
-    height: 1200px;
+    height: 700px;
     position: relative;
     top: 61px;
     background-color: var(--color1);
@@ -1096,6 +1096,7 @@ a:hover::after{
 
 .payment_outer select {
     border: none;
+    color: var(--color2);
     background-color: unset;
     -webkit-appearance: none;
     outline: none;
